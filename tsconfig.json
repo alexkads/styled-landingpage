@@ -1,15 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "esnext",
-    "jsx": "react",
+    "target": "ESNext",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
     "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-  }
+    "outDir": "./dist",
+    "rootDirs": ["./src", "./stories"],
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/*.ts", "src/*.tsx"],
+  "exclude": ["node_modules", "examples"]
 }

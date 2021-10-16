@@ -1,24 +1,53 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "no-extra-parens": ["error", "all", { "ignoreJSX": "all" }],
+    "arrow-body-style": ["off"],
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArray": true,
+        "allowArrowFunction": true,
+        "allowAnonymousClass": true,
+        "allowAnonymousFunction": true,
+        "allowCallExpression": true, // The true value here is for backward compatibility
+        "allowLiteral": true,
+        "allowObject": true
+      }
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
-    "rules": {
-    }
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "react/display-name": ["off"],
+    "no-non-null-assertion": "off",
+    "no-use-before-define": "off",
+    "react/no-unescaped-entities": "off",
+    "prefer-spread": "off",
+    "react/react-in-jsx-scope": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "space-before-function-paren": "off",
+    "react-hooks/rules-of-hooks": "off", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "off", // Checks effect dependencies
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/ban-types": ["off"],
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
 }
