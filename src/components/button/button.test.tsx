@@ -3,7 +3,8 @@ import { render, screen } from "@testing-library/react";
 import { Button } from ".";
 
 test("should render with default values", () => {
-  render(<Button>Texto</Button>);
+  const { debug } = render(<Button>Texto</Button>);
+  debug();
   const button = screen.getByRole("button", { name: "Texto" });
   expect(button);
 });
