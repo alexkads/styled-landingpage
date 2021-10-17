@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export interface ButtonProps {
   children?: React.ReactNode;
 }
 
 export const Button = ({ children }: ButtonProps) => {
-  return <button>{children}</button>;
+  return <button type="button">{children}</button>;
 };

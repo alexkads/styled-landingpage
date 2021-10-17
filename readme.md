@@ -3,7 +3,7 @@
   </a>
 </p>
 
-<h1 align="center">Simple components inputs fast ⚡️</h1>
+<h1 align="center">Components to facilitate landingpage creation with React ⚡️</h1>
 
 ## Installing Styled-landingpage
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../button";
 import { render, screen } from "@testing-library/react";
+import { Button } from ".";
 
 test("should render with default values", () => {
   render(<Button>Texto</Button>);

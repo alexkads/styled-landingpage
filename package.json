@@ -13,8 +13,9 @@
     "test": "jest",
     "prebuild": "rimraf dist",
     "build": "rollup -c",
-    "lint": "eslint --ext=.jsx,.js,.tsx,.ts  .",
-    "prepublish": "yarn build"
+    "prepublish": "yarn build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "React",
@@ -42,12 +43,17 @@
     "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.30",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "babel-loader": "^8.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -74,7 +80,5 @@
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   },
-  "engines": {
-    "node": ">=10"
-  }
+  "dependencies": {}
 }
