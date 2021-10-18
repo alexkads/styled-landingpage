@@ -1,10 +1,11 @@
 {
   "name": "styled-landingpage",
   "version": "0.0.2",
+  "private": true,
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "src/index.ts",
+  "types": "packages/library/index.ts",
   "sideEffects": false,
   "files": [
     "dist"
@@ -30,6 +31,11 @@
     "url": "git+https://github.com/alexkads/styled-landingpage.git"
   },
   "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",

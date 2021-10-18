@@ -18,7 +18,7 @@ const production = process.env.ROLLUP_WATCH;
 
 export default [
   {
-    input: "./src/index.ts",
+    input: "./packages/library/index.ts",
     output: [
       {
         file: `${dist}/cjs/index.js`,
